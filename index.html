@@ -1,17 +1,321 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-    <title>Danny Arango</title>
-    
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Danny Arango's portfolio</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-</head>
-<body>
-<div id="wrapper">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/styles.css">   
     
-</div>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jQueryColors.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/thenew000.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand nav-scroll" href="#page-top">
+                    <!-- <img class="dIcon" src="css/img/dIcon.png"> --><i class="fa fa-keyboard-o"></i> <span class="light">Daniel Luis</span> Arango  Lopez <i class="fa fa-keyboard-o"></i><!-- <img class="dIcon" src="css/img/dIcon.png"> -->
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="nav-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="nav-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="nav-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-scroll" href="#footer">Links</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro head-space">
+        <div class="intro-body">
+            <div class="container">
+                <div class="content-section">
+                    <div class="row logo-wrapper">
+                        <div class="col-md-8 col-md-offset-2">
+                            <img src="css/img/logo.png" class="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1>Full Stack Software Engineer</h1>
+                        </div>
+                    </div>
+                    <a href="#about" class="btn purple-btn-circle page-scroll">
+                        <div class="animated">
+                            <i class="fa fa-space-shuttle turn"></i>
+                        </div>
+                        <div id="r1" rocket="#r2" class="rocketGo">
+                            <i class="fa fa-space-shuttle turn"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="container text-center" width="100%">
+        <div class="caret"></div>
+        <div class="about-section content-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aut nulla, fuga esse, animi blanditiis ipsam quis consequuntur quas dolorem dolor sequi libero adipisci nisi nesciunt magni, sit, ex asperiores</p>
+                </div>
+            </div>
+
+            <!-- Rocket Animation -->
+            <a href="#skills" class="btn black-btn-circle page-scroll">
+                <div class="animated">
+                    <i class="fa fa-space-shuttle turn"></i>
+                </div>
+                <div id="r2" rocket="#r3" class="rocketGo">
+                    <i class="fa fa-space-shuttle turn"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container text-center">
+        <div class="caret caret-blue"></div>
+        <div class="content-section skills-section">
+            <h2>Skills</h2>
+            <div class="row skills">
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/javascript.png" class="dev-logo">
+                    <p class="lead">JavaScript</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/AngularJS.png" class="dev-logo">
+                    <p class="lead">AngularJS</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/ember.png" class="dev-logo">
+                    <p class="lead">Ember</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/node.png" class="dev-logo">
+                    <p class="lead">Node.js</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/express.png" style="padding-top: 35px" class="dev-logo">
+                    <p class="lead" style="padding-top: 30px">Express</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/mongodB.png" class="dev-logo">
+                    <p class="lead">MongoDB</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row skills">
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/firebase.png" class="dev-logo">
+                    <p class="lead" style="padding-top: 25px">Firebase</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/linux.png" class="dev-logo">
+                    <p class="lead">Linux</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/apache.png" style="height: 91.66px" class="dev-logo">
+                    <p class="lead">Apache</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/mysql.png" class="dev-logo">
+                    <p class="lead">MySQL</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/python.png" class="dev-logo">
+                    <p class="lead">Python</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="css/img/dev-logos/bootstrap.png" class="dev-logo">
+                    <p class="lead">Bootstrap</p>
+                </div>
+            </div>
+        </div>
+        <!-- Rocket Animation -->
+        <a href="#portfolio" class="btn blue-btn-circle page-scroll">
+            <div class="animated">
+                <i class="fa fa-space-shuttle turn"></i>
+            </div>
+            <div id="r3" rocket="#r4" class="rocketGo">
+                <i class="fa fa-space-shuttle turn"></i>
+            </div>
+        </a>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="text-center">
+        <div class="caret caret-light"></div>
+        <div class="portfolio-section content-section">
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Portfolio</h2>
+                        <p>Please Check Out My Favorite Projects</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="thumbnail well">
+                            <h4>Tic-Tac-Toe Game</h4>
+                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".tttMod">Technologies Included</button>
+                        </div>
+                        <!-- Modal view -->
+                        <div class="modal fade tttMod" tabindex="-1" role="dialog">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>My first attempt at a MiniMax Algorithm!  </p>
+                                </div>
+                                <div class="modal-footer">
+                                <h5>Languages/Frameworks Used:</h5>
+                                    <p>JavaScript jQuery HTML5 CSS BootStrap</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail well">
+                            <h4>Cash Register</h4>
+                            <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Technologies Included</button></p>
+                            <div class="caption">
+                                <p>...</p>
+                                <p><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-info">Source @ Github</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal View -->
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                          <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                              JavaScript HTML5 CSS
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rocket Animation -->
+        <a href="#contact" class="btn light-btn-circle page-scroll">
+            <div class="animated">
+                <i class="fa fa-space-shuttle turn"></i>
+            </div>
+            <div id="r4" rocket="#r5" class="rocketGo">
+                <i class="fa fa-space-shuttle turn"></i>
+            </div>
+        </a>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center">
+        <div class="caret caret-taupe"></div>
+        <div class="content-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact Me</h2>
+                    <p>Please feel free to reach out with any further inquiries!</p>
+                    <p><a href="mailto:thenewest000@gmail.com">thenewest000@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls col-md-8 col-md-offset-2">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Full Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Full Name" required="required" data-error="Full Name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Company *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Company" required="required" data-error="Company is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Ask me anything!" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container text-center">
+        <div class="caret"></div>
+            <p>Copyright &copy; Danny Arango 2016</p>
+        </div>
+        <div class="row"><div id="r5" class="rocketGo"></div></div>
+    </footer>
 </body>
 </html>
