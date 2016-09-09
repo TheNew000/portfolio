@@ -80,7 +80,7 @@ $(function() {
             $hidden.animate({
                 top: y,
                 color: oldColor
-            }).css('opacity', 1).css('display', 'none');
+            }).css('display', 'none');
             $nextRocket.prev().show();
 
         });
