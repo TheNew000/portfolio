@@ -1,6 +1,12 @@
  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Danny Arango's Portfolio</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,6 +20,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
     <script type="text/javascript" src="js/thenew000.js"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -141,7 +148,7 @@
                     <p class="lead" style="padding-top: 25px">Firebase</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="css/img/dev-logos/linux.png" class="dev-logo">
+                    <img src="css/img/dev-logos/Linux.png" class="dev-logo">
                     <p class="lead">Linux</p>
                 </div>
                 <div class="col-md-2">
@@ -248,53 +255,54 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Contact Me</h2>
                     <p>Please feel free to reach out with any further inquiries!</p>
-                    <p><a href="mailto:thenewest000@gmail.com">thenewest000@gmail.com</a>
+                    <p>
+                        <a href="javascript:window.location.href = 'mailto:' + 'the' + 'newest' + ['000','gma'].join('@') + ['il','com'].join('.')">the<!---->newest<!---->0<!---->0<!---->0<!---->@<!---->gmail<!---->.<!---->com</a>
                     </p>
                 </div>
             </div>
-            <form id="contact-form" method="post" action="mail.php" role="form">
-
+            <form id="contact-form" method="post" action="mail.php" data-toggle="validator" role="form">
                 <div class="messages"></div>
-
                 <div class="controls col-md-8 col-md-offset-2">
-
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="form-group has-feedback">
                                 <label for="form_name">Full Name *</label>
-                                <input type="text" name="fullName" class="form-control" placeholder="Please enter your Full Name" required="required" data-error="Full Name is required.">
+                                <input type="text" name="fullName" class="form-control" pattern="^[\\p{L} .'-]+$" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_lastname">Company *</label>
-                                <input type="text" name="company" class="form-control" placeholder="Please enter your Company" required="required" data-error="Company is required.">
-                                <div class="help-block with-errors"></div>
+                            <div class="form-group has-feedback">
+                                <label for="form_lastname">Company</label>
+                                <input type="text" name="company" class="form-control" placeholder="Please enter your Company">
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="form-group has-feedback">
                                 <label for="form_email">Email *</label>
-                                <input type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Please enter your email" required data-required-error="I'll need a valid email to reach you!">
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="form-group has-feedback">
                                 <label for="form_phone">Phone</label>
                                 <input type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                <div class="help-block with-errors"></div>
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form-group">
+                            <div class="form-group has-feedback">
                                 <label for="form_message">Message *</label>
-                                <textarea name="message" class="form-control" placeholder="Ask me anything!" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <textarea name="message" data-minlength="100" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message!"></textarea>
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
