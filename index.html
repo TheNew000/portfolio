@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-    <title>Danny Arango's portfolio</title>
+    <title>Danny Arango's Portfolio</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -85,9 +85,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>About</h2>
-                    <p>While I am still in my early stages of full stack development, I am skilled in the programs I have familiarized myself with and am a hungry and eager learner.</p>
-                    <p>I am an alumnus of <a href="http://www.digitalcrafts.com/">DigitalCrafts</a> an excellent and immersive 16 Week program that focues on both the MEAN and LAMP stacks.  I'm one of the rare NYC natives that were actually born on the island, so my ability to acclimate to new places and cultures leaves me open to opportunities around the world!</p>
-                    <p>I absolutely love data: from collection to organizing and of course, analyzing. I want to be building new complex and elaborate aglorithms that not only track the trends that we we're looking for, but are dynamic enough to learn from the data and help enlighten us to correlations that haven't been understood or noticed yet.  I am eager to join other motivated developers and companies with the same goals and passions that I feel about learning and improving our world.  Please check out my work and feel free to <a class="nav-scroll" href="#contact">reach out to me!</a></p>
+                    <p>While I am still in my early stages of full stack development, I am skilled in the programs and frameworks I have familiarized myself with and am a hungry and eager learner.</p>
+                    <p>I am an alumnus of <a href="http://www.digitalcrafts.com/">DigitalCrafts</a> an intensive and immersive 16 Week program that focuses on both the MEAN and LAMP stacks. I'm one of the rare NYC natives that were actually born on the island, so my ability to acclimate to new places and cultures leaves me open to opportunities around the world!</p>
+                    <p>I absolutely love data: from collection to organizing and of course, analyzing. I want to build modern complex and elaborate algorithms that not only track the trends that we're looking for but are dynamic enough to learn from the data and help enlighten us to correlations that haven't been understood or noticed yet. I am eager to join other motivated developers and companies with the same goals and passions that I feel about learning and improving our world. Please check out my work and feel free to <a class="nav-scroll" href="#contact">reach out to me!</a></p>
                 </div>
             </div>
 
@@ -187,7 +187,7 @@
                     <div class="col-sm-3">
                         <div class="thumbnail well">
                             <h4>Tic-Tac-Toe Game</h4>
-                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".tttMod">Technologies Included</button>
+                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".tttMod">Learn More</button>
                         </div>
                         <!-- Modal view -->
                         <div class="modal fade tttMod" tabindex="-1" role="dialog">
@@ -211,7 +211,7 @@
                     <div class="col-sm-3">
                         <div class="thumbnail well">
                             <h4>Cash Register</h4>
-                            <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Technologies Included</button></p>
+                            <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Learn More</button></p>
                             <div class="caption">
                                 <p>...</p>
                                 <p><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-info">Source @ Github</a></p>
@@ -252,7 +252,7 @@
                     </p>
                 </div>
             </div>
-            <form id="contact-form" method="post" action="contact.php" role="form">
+            <form id="contact-form" method="post" action="mail.php" role="form">
 
                 <div class="messages"></div>
 
@@ -262,14 +262,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="form_name">Full Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Full Name" required="required" data-error="Full Name is required.">
+                                <input type="text" name="fullName" class="form-control" placeholder="Please enter your Full Name" required="required" data-error="Full Name is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="form_lastname">Company *</label>
-                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Company" required="required" data-error="Company is required.">
+                                <input type="text" name="company" class="form-control" placeholder="Please enter your Company" required="required" data-error="Company is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -278,14 +278,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="form_email">Email *</label>
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                <input type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="form_phone">Phone</label>
-                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <input type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -294,7 +294,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="Ask me anything!" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <textarea name="message" class="form-control" placeholder="Ask me anything!" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
