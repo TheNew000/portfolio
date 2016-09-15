@@ -269,7 +269,7 @@
                                 <label for="form_name">Full Name *</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
-                                    <input type="text" name="fullName" class="form-control" pattern="^[\\p{L} .'-]+$" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
+                                    <input type="text" name="fullName" class="form-control" pattern="/^[a-z ,.'-]+$/i" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 </div>
                                 <div class="help-block with-errors"></div>
