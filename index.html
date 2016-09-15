@@ -260,16 +260,18 @@
                     </p>
                 </div>
             </div>
-            <form id="contact-form" method="post" action="mail.php" data-toggle="validator" role="form">
-                <div class="messages"></div>
+            <form id="contact-form" method="post" onsubmit="return validateForm();" action="mail.php" data-toggle="validator" role="form">
                 <div class="controls col-md-8 col-md-offset-2">
                     <div class="row">
+                        <div style="display:none;">
+                           <input type="text" name="noThanks" id="noThanks" />
+                        </div>
                         <div class="col-md-6">
                             <div class="form-group has-feedback">
                                 <label for="form_name">Full Name *</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
-                                    <input type="text" name="fullName" class="form-control" pattern="/^[a-z ,.'-]+$/i" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
+                                    <input type="text" name="fullName" class="form-control" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 </div>
                                 <div class="help-block with-errors"></div>
@@ -303,7 +305,7 @@
                                 <label for="form_phone">Phone</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                    <input type="tel" name="phone" class="form-control" placeholder="Include for faster response...">
+                                    <input type="tel" name="phone" class="form-control" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="Include for faster response...">
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 </div>
                             </div>
@@ -315,7 +317,7 @@
                                 <label for="form_message">Message *</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
-                                    <textarea name="message" data-minlength="100" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message!"></textarea>
+                                    <textarea name="message" data-minlength="100" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message! (Minimum 100 Characters)"></textarea>
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 </div>
                                 <div class="help-block with-errors"></div>
@@ -331,6 +333,7 @@
                         </div>
                     </div>
                 </div>
+
             </form>
         </div>
         <!-- Rocket Animation -->

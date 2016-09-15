@@ -127,6 +127,16 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
+function validateForm(){
+    if(!$("#noThanks").value) { 
+            return true;
+        } 
+        else {
+            return false;
+        }
+    }
+}
+
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
