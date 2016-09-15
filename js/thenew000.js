@@ -90,6 +90,36 @@ $(function() {
         }, 2500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $('a.page-up').bind('click', function(event) {
+        var $anchor = $(this);
+        var $icon = $anchor.children('.animated');
+        var $hidden = $anchor.children('.rocketGo');
+        $hidden.each(function(i){
+            var newRocket = $(this);
+            var parent = newRocket.parent();
+            var y = parent.offset().top;
+            newRocket.css('clientTop', y);
+        });
+        var $nextRocket = $($hidden.attr('rocket'));
+        $icon.hide(250, 'linear', $hidden.show(250)).delay(2000).show(50, 'easeInOutQuart');
+        $nextRocket.prev().hide();
+        $.when($hidden.animate({
+            top: -100
+        }, 7000, 'easeInOutQuart')).then(function(){
+            var parent = $hidden.parent();
+            var y = parent.offset().top;
+            $hidden.animate({
+                top: y
+            }).css('display', 'none');
+            $nextRocket.prev().show();
+        });
+
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 7000, 'easeInOutQuart');
+        event.preventDefault();
+    });
 });
 
 // Closes the Responsive Menu on Menu Item Click

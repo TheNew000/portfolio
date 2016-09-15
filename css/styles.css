@@ -288,7 +288,14 @@ a:hover, a:focus {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 263, ../compass/sass/styles.scss */
+/* line 261, ../compass/sass/styles.scss */
+.btn-circle i.up, .black-btn-circle i.up, .purple-btn-circle i.up, .light-btn-circle i.up, .blue-btn-circle i.up {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/* line 269, ../compass/sass/styles.scss */
 .btn-circle:hover .animated, .black-btn-circle:hover .animated, .purple-btn-circle:hover .animated, .light-btn-circle:hover .animated, .blue-btn-circle:hover .animated {
   -webkit-animation-name: passing;
   -moz-animation-name: passing;
@@ -300,13 +307,13 @@ a:hover, a:focus {
   -moz-animation-timing-function: linear;
 }
 
-/* line 275, ../compass/sass/styles.scss */
+/* line 281, ../compass/sass/styles.scss */
 .logo-wrapper {
   margin-bottom: 50px;
   padding-top: 0;
 }
 
-/* line 280, ../compass/sass/styles.scss */
+/* line 286, ../compass/sass/styles.scss */
 .rocketGo {
   display: none;
   position: absolute;
@@ -349,12 +356,49 @@ a:hover, a:focus {
     opacity: 0;
   }
 }
-/* line 328, ../compass/sass/styles.scss */
+@-webkit-keyframes flying {
+  from {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+@-moz-keyframes flying {
+  from {
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+/* line 376, ../compass/sass/styles.scss */
 .container {
   width: 100%;
 }
 
-/* line 331, ../compass/sass/styles.scss */
+/* line 379, ../compass/sass/styles.scss */
 #portfolio {
   text-shadow: 2px 2px 2px black;
   background-color: #77615C;
@@ -367,21 +411,16 @@ a:hover, a:focus {
   background: linear-gradient(transparent, #77615C 80%);
   /* Standard syntax */
 }
-/* line 338, ../compass/sass/styles.scss */
+/* line 386, ../compass/sass/styles.scss */
 #portfolio .modal {
   text-shadow: none;
 }
-/* line 340, ../compass/sass/styles.scss */
+/* line 388, ../compass/sass/styles.scss */
 #portfolio .modal .btn {
   font-weight: 900;
 }
 
-/* line 346, ../compass/sass/styles.scss */
-#portfolio {
-  background-color: transparent;
-}
-
-/* line 350, ../compass/sass/styles.scss */
+/* line 394, ../compass/sass/styles.scss */
 .portfolio-section {
   width: 100%;
   padding: 50px 0;
@@ -389,32 +428,68 @@ a:hover, a:focus {
   background-color: transparent;
 }
 
-/* line 357, ../compass/sass/styles.scss */
+/* line 401, ../compass/sass/styles.scss */
 .modal {
   color: #00E676;
   background: rgba(178, 177, 207, 0.4);
 }
 
-/* line 362, ../compass/sass/styles.scss */
+/* line 406, ../compass/sass/styles.scss */
 .modal-content {
   background-color: black;
 }
 
-/* line 366, ../compass/sass/styles.scss */
+/* line 410, ../compass/sass/styles.scss */
 .modal-footer {
   text-align: center;
 }
 
-/* line 371, ../compass/sass/styles.scss */
+/* line 415, ../compass/sass/styles.scss */
 #contact {
   background: -webkit-linear-gradient(transparent, black 80%);
   background: -o-linear-gradient(transparent, black 80%);
   background: linear-gradient(transparent, black 80%);
   color: #98D3EA;
   font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+}
+/* line 422, ../compass/sass/styles.scss */
+#contact #contact-form {
+  display: inline-block;
+}
+/* line 425, ../compass/sass/styles.scss */
+#contact .form-control {
+  border-radius: 0px 5px 5px 0px;
+}
+/* line 428, ../compass/sass/styles.scss */
+#contact .fa {
+  color: #98D3EA;
+}
+/* line 431, ../compass/sass/styles.scss */
+#contact .fa-envelope {
+  color: #42DCA3;
+}
+/* line 434, ../compass/sass/styles.scss */
+#contact .input-group-addon {
+  background-color: #666;
+}
+/* line 437, ../compass/sass/styles.scss */
+#contact .blue-btn-circle {
+  padding-left: 7px;
+}
+/* line 440, ../compass/sass/styles.scss */
+#contact .blue-btn-circle:hover .animated {
+  -webkit-animation-name: flying;
+  -moz-animation-name: flying;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
 }
 
-/* line 379, ../compass/sass/styles.scss */
+/* line 454, ../compass/sass/styles.scss */
 .caret {
   width: 90px;
   border-radius: 0 0 90px 90px;
@@ -425,27 +500,27 @@ a:hover, a:focus {
   margin-right: auto;
 }
 
-/* line 393, ../compass/sass/styles.scss */
+/* line 468, ../compass/sass/styles.scss */
 .caret-purple {
   border-top: 45px solid rgba(178, 177, 207, 0.4);
 }
 
-/* line 396, ../compass/sass/styles.scss */
+/* line 471, ../compass/sass/styles.scss */
 .caret-blue {
   border-top: 45px solid #98D3EA;
 }
 
-/* line 399, ../compass/sass/styles.scss */
+/* line 474, ../compass/sass/styles.scss */
 .caret-light {
   border-top: 45px solid #E2EBFF;
 }
 
-/* line 402, ../compass/sass/styles.scss */
+/* line 477, ../compass/sass/styles.scss */
 .caret-taupe {
   border-top: 45px solid #77615C;
 }
 
-/* line 406, ../compass/sass/styles.scss */
+/* line 481, ../compass/sass/styles.scss */
 #about {
   font-size: 20px;
   font-weight: bold;
@@ -461,12 +536,12 @@ a:hover, a:focus {
   background: linear-gradient(transparent, #98D3EA 80%, #98D3EA);
   /* Standard syntax */
 }
-/* line 416, ../compass/sass/styles.scss */
+/* line 491, ../compass/sass/styles.scss */
 #about .btn {
   text-shadow: 2px 2px 2px #E2EBFF;
 }
 
-/* line 422, ../compass/sass/styles.scss */
+/* line 497, ../compass/sass/styles.scss */
 #skills {
   color: white;
   text-shadow: 2px 2px 2px black;
@@ -481,22 +556,22 @@ a:hover, a:focus {
   /* Standard syntax */
 }
 
-/* line 431, ../compass/sass/styles.scss */
+/* line 507, ../compass/sass/styles.scss */
 .well {
   background: #49392D;
   margin-left: 50px;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 767px) {
-  /* line 439, ../compass/sass/styles.scss */
+  /* line 515, ../compass/sass/styles.scss */
   .content-section {
     padding-top: 50px;
   }
 }
-/* line 444, ../compass/sass/styles.scss */
+/* line 520, ../compass/sass/styles.scss */
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -507,12 +582,12 @@ a:hover, a:focus {
   border-radius: 5px;
 }
 
-/* line 454, ../compass/sass/styles.scss */
+/* line 530, ../compass/sass/styles.scss */
 .btn-default {
   border: 1px solid #fe3955;
   background-color: #fe3955;
 }
-/* line 458, ../compass/sass/styles.scss */
+/* line 534, ../compass/sass/styles.scss */
 .btn-default:hover, .btn-default:focus {
   border: 1px solid #fe3955;
   outline: none;
@@ -520,12 +595,12 @@ a:hover, a:focus {
   background-color: rgba(254, 57, 85, 0.4);
 }
 
-/* line 467, ../compass/sass/styles.scss */
+/* line 543, ../compass/sass/styles.scss */
 .btn-primary {
   border: 1px solid #f16301;
   background-color: #f16301;
 }
-/* line 471, ../compass/sass/styles.scss */
+/* line 547, ../compass/sass/styles.scss */
 .btn-primary:hover, .btn-primary:focus {
   border: 1px solid #f16301;
   outline: none;
@@ -533,12 +608,12 @@ a:hover, a:focus {
   background-color: rgba(241, 99, 1, 0.4);
 }
 
-/* line 480, ../compass/sass/styles.scss */
+/* line 556, ../compass/sass/styles.scss */
 .btn-danger {
   border: 1px solid #01d4f1;
   background-color: #01d4f1;
 }
-/* line 484, ../compass/sass/styles.scss */
+/* line 560, ../compass/sass/styles.scss */
 .btn-danger:hover, .btn-danger:focus {
   border: 1px solid #01d4f1;
   outline: none;
@@ -546,80 +621,65 @@ a:hover, a:focus {
   background-color: rgba(1, 212, 241, 0.4);
 }
 
-/* line 493, ../compass/sass/styles.scss */
+/* line 569, ../compass/sass/styles.scss */
 .close {
   color: #00E676;
   opacity: 1;
   text-shadow: none;
 }
-/* line 497, ../compass/sass/styles.scss */
+/* line 573, ../compass/sass/styles.scss */
 .close:hover, .close:focus {
   color: #00E676;
 }
 
-/* line 506, ../compass/sass/styles.scss */
+/* line 582, ../compass/sass/styles.scss */
 ul.banner-social-buttons {
   margin-top: 0;
 }
 @media (max-width: 1199px) {
-  /* line 506, ../compass/sass/styles.scss */
+  /* line 582, ../compass/sass/styles.scss */
   ul.banner-social-buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 512, ../compass/sass/styles.scss */
+  /* line 588, ../compass/sass/styles.scss */
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
-  /* line 516, ../compass/sass/styles.scss */
+  /* line 592, ../compass/sass/styles.scss */
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
 }
 
-/* line 523, ../compass/sass/styles.scss */
-footer {
-  height: 250px;
-  background: url(../css/img/sleepwell.jpg) 0px -370px;
-  background-size: cover;
-}
-/* line 526, ../compass/sass/styles.scss */
-footer p {
-  margin: 0;
-}
-/* line 529, ../compass/sass/styles.scss */
-footer .caret {
-  border-top: 45px solid black;
-}
-
-/* line 536, ../compass/sass/styles.scss */
+/* line 599, ../compass/sass/styles.scss */
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(178, 177, 207, 0.2);
 }
 
-/* line 542, ../compass/sass/styles.scss */
+/* line 605, ../compass/sass/styles.scss */
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(178, 177, 207, 0.2);
 }
 
-/* line 548, ../compass/sass/styles.scss */
+/* line 611, ../compass/sass/styles.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 552, ../compass/sass/styles.scss */
+/* line 615, ../compass/sass/styles.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 561, ../compass/sass/styles.scss */
+/* line 624, ../compass/sass/styles.scss */
 .logo {
   max-height: 200px;
   -webkit-filter: drop-shadow(14px 0px 4px #111);
@@ -794,19 +854,19 @@ img::-moz-selection {
     opacity: 1;
   }
 }
-/* line 654, ../compass/sass/styles.scss */
+/* line 717, ../compass/sass/styles.scss */
 .head-space, .foot-space {
   z-index: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-/* line 661, ../compass/sass/styles.scss */
+/* line 724, ../compass/sass/styles.scss */
 .head-space .star, .foot-space .star {
   position: absolute;
   background-color: #B2B1CF;
 }
-/* line 666, ../compass/sass/styles.scss */
+/* line 729, ../compass/sass/styles.scss */
 .head-space .star-type1, .foot-space .star-type1 {
   width: 1px;
   height: 1px;
@@ -818,7 +878,7 @@ img::-moz-selection {
   -o-animation: twinkle_one 3s ease-in-out infinite;
   animation: twinkle_one 3s ease-in-out infinite;
 }
-/* line 677, ../compass/sass/styles.scss */
+/* line 740, ../compass/sass/styles.scss */
 .head-space .star-type2, .foot-space .star-type2 {
   width: 2px;
   height: 2px;
@@ -830,7 +890,7 @@ img::-moz-selection {
   -o-animation: twinkle_two 12s ease-in-out infinite;
   animation: twinkle_two 12s ease-in-out infinite;
 }
-/* line 688, ../compass/sass/styles.scss */
+/* line 751, ../compass/sass/styles.scss */
 .head-space .star-type3, .foot-space .star-type3 {
   width: 2px;
   height: 2px;
@@ -841,4 +901,197 @@ img::-moz-selection {
   -moz-animation: twinkle_three 7s ease-in-out infinite;
   -o-animation: twinkle_three 7s ease-in-out infinite;
   animation: twinkle_three 7s ease-in-out infinite;
+}
+
+/* line 765, ../compass/sass/styles.scss */
+footer {
+  height: 250px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  text-shadow: 2px 2px 2px black;
+  font: bold 16px sans-serif;
+  display: inline-block;
+  position: absolute;
+  background: url(../css/img/sleepwell.jpg) 0px -370px;
+  background-size: cover;
+}
+/* line 774, ../compass/sass/styles.scss */
+footer p {
+  margin: 0;
+}
+/* line 777, ../compass/sass/styles.scss */
+footer .caret {
+  border-top: 45px solid black;
+  display: inherit;
+  margin-bottom: 12px;
+}
+
+/* line 786, ../compass/sass/styles.scss */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+/* line 795, ../compass/sass/styles.scss */
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+/* line 799, ../compass/sass/styles.scss */
+.footer-distributed h3 {
+  color: #77615C;
+  font: normal 48px 'Cookie', cursive;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* line 806, ../compass/sass/styles.scss */
+.footer-distributed h3 span {
+  color: #B2B1CF;
+}
+
+/* line 810, ../compass/sass/styles.scss */
+.footer-distributed h3 .l {
+  color: #E2EBFF;
+}
+
+/* line 814, ../compass/sass/styles.scss */
+.footer-distributed h3 .a {
+  color: #98D3EA;
+}
+
+/* Footer links */
+/* line 820, ../compass/sass/styles.scss */
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 827, ../compass/sass/styles.scss */
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+/* line 836, ../compass/sass/styles.scss */
+.footer-distributed .footer-center {
+  width: 35%;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+/* line 843, ../compass/sass/styles.scss */
+.footer-distributed .footer-center i.fa-copyright, .footer-distributed .footer-center i.fa-map-marker {
+  background-color: #33383b;
+  color: #42DCA3;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+/* line 856, ../compass/sass/styles.scss */
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #42DCA3;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* line 863, ../compass/sass/styles.scss */
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* Footer Right */
+/* line 872, ../compass/sass/styles.scss */
+.footer-distributed .footer-right {
+  width: 30%;
+  text-align: right;
+  margin-top: -40px;
+}
+
+/* line 878, ../compass/sass/styles.scss */
+.footer-right .logo {
+  max-height: 145px;
+  -webkit-filter: drop-shadow(14px 0px 4px #111);
+  filter: drop-shadow(14px 0px 4px #111);
+}
+
+/* line 884, ../compass/sass/styles.scss */
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 892, ../compass/sass/styles.scss */
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* line 900, ../compass/sass/styles.scss */
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+  margin-left: 61px;
+}
+
+/* line 905, ../compass/sass/styles.scss */
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #42DCA3;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+  /* line 926, ../compass/sass/styles.scss */
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  /* line 930, ../compass/sass/styles.scss */
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  /* line 939, ../compass/sass/styles.scss */
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
 }

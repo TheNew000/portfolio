@@ -13,7 +13,7 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="css/styles.css">   
+    <link rel="stylesheet" href="css/styles.css">      
     
     <script src="vendor/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/jQueryColors.js"></script>
@@ -65,7 +65,7 @@
                 <div class="content-section">
                     <div class="row logo-wrapper">
                         <div class="col-md-8 col-md-offset-2">
-                            <img src="css/img/logo.png" class="logo">
+                            <img src="css/img/metal-color-logo.png" class="logo">
                         </div>
                     </div>
                     <div class="row">
@@ -256,7 +256,7 @@
                     <h2>Contact Me</h2>
                     <p>Please feel free to reach out with any further inquiries!</p>
                     <p>
-                        <a href="javascript:window.location.href = 'mailto:' + 'the' + 'newest' + ['000','gma'].join('@') + ['il','com'].join('.')">the<!---->newest<!---->0<!---->0<!---->0<!---->@<!---->gmail<!---->.<!---->com</a>
+                        <a href="javascript:window.location.href = 'mailto:' + 'the' + 'newest' + ['000','gma'].join('@') + ['il','com'].join('.')"><i class="fa fa-envelope"></i>  the<!---->newest<!---->0<!---->0<!---->0<!---->@<!---->gmail<!---->.<!---->com</a>
                     </p>
                 </div>
             </div>
@@ -267,16 +267,22 @@
                         <div class="col-md-6">
                             <div class="form-group has-feedback">
                                 <label for="form_name">Full Name *</label>
-                                <input type="text" name="fullName" class="form-control" pattern="^[\\p{L} .'-]+$" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
-                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
+                                    <input type="text" name="fullName" class="form-control" pattern="^[\\p{L} .'-]+$" placeholder="Please enter your Full Name" required data-required-error="Come on now, whats your name?">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group has-feedback">
                                 <label for="form_lastname">Company</label>
-                                <input type="text" name="company" class="form-control" placeholder="Please enter your Company">
-                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                                    <input type="text" name="company" class="form-control" placeholder="Please Include">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -284,16 +290,22 @@
                         <div class="col-md-6">
                             <div class="form-group has-feedback">
                                 <label for="form_email">Email *</label>
-                                <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Please enter your email" required data-required-error="I'll need a valid email to reach you!">
-                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                                    <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Please enter your email" required data-required-error="I'll need a valid email to reach you!">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group has-feedback">
                                 <label for="form_phone">Phone</label>
-                                <input type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Include for faster response...">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,8 +313,11 @@
                         <div class="col-md-12">
                             <div class="form-group has-feedback">
                                 <label for="form_message">Message *</label>
-                                <textarea name="message" data-minlength="100" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message!"></textarea>
-                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                                    <textarea name="message" data-minlength="100" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message!"></textarea>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -318,14 +333,54 @@
                 </div>
             </form>
         </div>
+        <!-- Rocket Animation -->
+        <a href="#page-top" class="btn blue-btn-circle page-up">
+            <div class="animated">
+                <i class="fa fa-space-shuttle up"></i>
+            </div>
+            <div rocket="#page-top" class="rocketGo">
+                <i class="fa fa-space-shuttle up"></i>
+            </div>
+        </a>
     </section>
     <!-- Footer -->
-    <footer id="footer">
-        <div class="container text-center">
-        <div class="caret"></div>
-            <p>Copyright &copy; Danny Arango 2016</p>
-        </div>
-        <div class="row"><div id="r5" class="rocketGo"></div></div>
-    </footer>
+    <footer class="footer-distributed">
+        <div class="container">
+            <div class="caret"></div>
+            <div class="footer-left">
+                <p class="footer-company-about">
+                    <h5>I get by with a little help from my friends!</h5>
+                    Background Photography:  <a href="#"><i class="fa fa-camera-retro"></i> Jack Fusco</a>
+                    Graphic Design:  <a href="#"><i class="fa fa-paint-brush"></i> Vicki Salcedo</a>
+                </p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                    <p>Danny Arango 2016</p>
+                </div>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Atlanta, Georgia</p>
+                </div>
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <img src="css/img/crack-color-logo.png" class="logo">
+                <h3>D<span>L</span><span class="a">A</span><span class="l">L</span></h3>
+            </div>
+            <div class="row">
+                <div id="r5" class="rocketGo"></div>
+            </div>
+        </footer>
 </body>
 </html>
