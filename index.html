@@ -11,6 +11,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Danny Arango's Portfolio</title>
+    <link rel="shortcut icon" href="/favicon" type="image/x-icon">
+    <link rel="icon" href="/favicon" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="css/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="css/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="css/favicon/apple-icon-72x72.png">
@@ -25,6 +27,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="css/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="css/favicon/favicon-16x16.png">
     <link rel="manifest" href="css/favicon/manifest.json">
+    
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -206,54 +209,112 @@
                         <h2>Portfolio</h2>
                         <p>Please Check Out My Favorite Projects</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="thumbnail well">
-                            <h4>Tic-Tac-Toe Game</h4>
-                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".tttMod">Learn More</button>
-                        </div>
-                        <!-- Modal view -->
-                        <div class="modal fade tttMod" tabindex="-1" role="dialog">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>My first MiniMax Algorithm!  </p>
-                                </div>
-                                <div class="modal-footer">
-                                <h5>Languages/Frameworks Used:</h5>
-                                    <p>JavaScript--jQuery--HTML5--CSS--BootStrap</p>
-                                </div>
+                    <div class="row thumb-sect">
+                    <!-- New Card -->
+                        <div class="col-sm-3"> 
+                            <div class="thumbnail well">
+                                <h4>MiniMax Tic-Tac-Toe</h4>
+                               <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".tttMod">Learn More</button>
                             </div>
-                          </div>
-                        </div>
+                            <!-- Modal view -->
+                            <div class="modal fade tttMod" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>My first MiniMax Algorithm!  The game is designed for several layers of playability.  Either with a friend, or against an AI with varying levels of intelligence.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>JavaScript--jQuery--HTML5--CSS3--BootStrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                        <!-- New Card -->
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
+                                <h4>Cash Register</h4>
+                                <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".crModal">Learn More</button></p>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade crModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>This was a lot of fun to figure out.  I created an app that takes in the amount someone owes for a purchase, then shows a physical representation of the change owed!  The algorithm goes through the amount of change owed and then reduces it by subtracting the value of the highest coin ($) down to a penny.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>JavaScript--jQuery--HTML5--CSS3--BootStrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                        <!-- New Card -->
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
+                                <h4>Service Organizer</h4>
+                                <p class="lead"><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bbModal">Learn More</button></p>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade bbModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>This is a small portion of a much larger program.  There are forms and beautiful graphs to view informative data as well as calanders for planning!</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>Angular--D3--C3--JavaScript--jQuery</p>
+                                            <p>HTML5--SASS--CSS3--BootStrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                        <!-- New Card -->
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
+                                <h4>Another App</h4>
+                                <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bbModal">Learn More</button></p>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade bbModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>Things</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
                     </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail well">
-                            <h4>Cash Register</h4>
-                            <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Learn More</button></p>
-                            <div class="caption">
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-info">Source @ Github</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal View -->
-                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                          <div class="modal-dialog modal-sm" role="document">
-                            <div class="modal-content">
-                              JavaScript HTML5 CSS
-                            </div>
-                          </div>
-                        </div>
                 </div>
             </div>
         </div>
-
         <!-- Rocket Animation -->
         <a href="#contact" class="btn light-btn-circle page-scroll">
             <div class="animated">
@@ -336,7 +397,7 @@
                                 <label for="form_message">Message *</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
-                                    <textarea name="message" data-minlength="100" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message! (Minimum 100 Characters)"></textarea>
+                                    <textarea name="message" data-minlength="80" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message! (Minimum 80 Characters)"></textarea>
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 </div>
                                 <div class="help-block with-errors"></div>
@@ -366,39 +427,41 @@
         </a>
     </section>
     <!-- Footer -->
-    <footer class="footer-distributed">
+    <footer id="footer" class="footer-distributed">
         <div class="container">
             <div class="caret"></div>
-            <div class="footer-left">
+            <div class="footer-left col-sm-4">
                 <p class="footer-company-about">
-                    <h5>I get by with a little help from my friends!</h5>
-                    Background Photography:  <a href="#"><i class="fa fa-camera-retro"></i> Jack Fusco</a>
-                    Graphic Design:  <a href="#"><i class="fa fa-paint-brush"></i> Vicki Salcedo</a>
+                    <h5 style="margin-bottom: 0">I get by with a <span>(lotta')</span> help</h5><h5>from my friends!</h5 style="margin-top: 0px">
+                    Background Photography:  <a href="http://www.jackfusco.com/"><i class="fa fa-camera-retro"></i> Jack Fusco</a>
+                    <br>
+                    Graphic Design:  <a href="http://www.art4ustudio.com/"><i class="fa fa-paint-brush"></i> Vicki Salcedo</a>
                 </p>
             </div>
 
-            <div class="footer-center">
-                <div>
-                    <i class="fa fa-copyright" aria-hidden="true"></i>
-                    <p>Danny Arango 2016</p>
-                </div>
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p>Atlanta, Georgia</p>
+            <div class="footer-center col-md-4">
+                <div class="footer-info">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Atlanta, Georgia</p>
+                    </div>
                 </div>
                 <div class="footer-icons">
 
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-file-pdf-o"></i></a>
+                    <a href="https://github.com/TheNew000"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/danny-arango"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-fort-awesome"></i></a>
 
                 </div>
             </div>
 
-            <div class="footer-right">
+            <div class="footer-right col-md-4">
                 <img src="css/img/crack-color-logo.png" class="logo">
-                <h3>D<span>L</span><span class="a">A</span><span class="l">L</span></h3>
+                <div class="col-md-offset-5">
+                    <i class="col-md-1 fa fa-copyright" aria-hidden="true"></i>
+                    <h3 class="col-md-3">D<span>L</span><span class="a">A</span><span class="l">L</span></h3>
+                </div>
             </div>
             <div class="row">
                 <div id="r5" class="rocketGo"></div>

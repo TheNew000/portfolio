@@ -393,9 +393,12 @@ a {
 
 .portfolio-section {
     width: 100%;
-    padding: 50px 0;
     color: #B2B1CF;
     background-color: transparent;
+    .thumb-sect{
+        margin-left: -40px;
+        margin-right: 10px;
+    }
 }
 
 .modal{
@@ -764,8 +767,8 @@ img::-moz-selection {
 
 footer {
     height: 250px;
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
     text-align: left;
     text-shadow: 2px 2px 2px black;
     font: bold 16px sans-serif;
@@ -792,9 +795,6 @@ footer {
 
 /* Footer left */
 
-.footer-distributed .footer-left{
-    width: 30%;
-}
 
 .footer-distributed h3{
     color:  #77615C;
@@ -812,6 +812,10 @@ footer {
 }
 
 .footer-distributed h3 .a{
+    color:  #98D3EA;
+}
+
+.footer-distributed h5 span{
     color:  #98D3EA;
 }
 
@@ -834,12 +838,20 @@ footer {
 /* Footer Center */
 
 .footer-distributed .footer-center{
-    width: 35%;
     vertical-align: bottom;
     text-align: center;
 }
 
-.footer-distributed .footer-center {
+.footer-distributed {
+    .fa-copyright:before{
+        position: relative;
+        left: -6px;
+        top: -1px;
+    }
+    i.fa-copyright{
+        top: 11px;
+        left: 23px;
+    }
     i.fa-copyright, i.fa-map-marker{
         background-color:  #33383b;
         color: #42DCA3;
@@ -850,13 +862,14 @@ footer {
         line-height: 42px;
         margin: 10px 15px;
         vertical-align: middle;
+        text-align: center;
     }
 }
 
 .footer-distributed .footer-center p{
     display: inline-block;
     color: #42DCA3;
-    vertical-align: middle;
+    vertical-align: center;
     margin:0;
 }
 
@@ -870,7 +883,6 @@ footer {
 /* Footer Right */
 
 .footer-distributed .footer-right{
-    width: 30%;
     text-align: right;
     margin-top: -40px;
 }
@@ -898,8 +910,11 @@ footer {
 }
 
 .footer-distributed .footer-icons{
-    margin-top: 25px;
-    margin-left: 61px;
+    margin-top: 71px;
+}
+
+.footer-distributed .footer-info{
+    margin-right: 60px;
 }
 
 .footer-distributed .footer-icons a{
@@ -909,7 +924,7 @@ footer {
     cursor: pointer;
     background-color:  #33383b;
     border-radius: 2px;
-
+    vertical-align: bottom;
     font-size: 20px;
     color: #42DCA3;
     text-align: center;
@@ -925,6 +940,7 @@ footer {
 
     .footer-distributed{
         font: bold 14px sans-serif;
+        background-color: black;
     }
 
     .footer-distributed .footer-left,
@@ -940,4 +956,8 @@ footer {
         margin-left: 0;
     }
 
+}
+
+.well{
+    padding: 11px;
 }

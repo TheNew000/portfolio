@@ -130,13 +130,12 @@ $('.navbar-collapse ul li a').click(function() {
 function validateForm(){
     if(!$("#noThanks").value) { 
             return true;
-        } 
-        else {
-            return false;
-        }
+    } 
+    else {
+        return false;
     }
 }
-
+    
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
