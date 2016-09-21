@@ -130,8 +130,7 @@ $('.navbar-collapse ul li a').click(function() {
 function validateForm(){
     if(!$("#noThanks").value) { 
             return true;
-    } 
-    else {
+    }else{
         return false;
     }
 }
