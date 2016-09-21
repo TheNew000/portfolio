@@ -162,9 +162,9 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        background: -webkit-linear-gradient(transparent, black 140%);
-        background: -o-linear-gradient(transparent, black 140%);
-        background: linear-gradient(transparent, black 140%);
+        background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9) 60%, black);
+        background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9) 60%, black);
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.9) 60%, black);
         
         // text-shadow: 2px 2px 2px black;
         .brand-heading {
@@ -455,15 +455,11 @@ a {
 }
  
 .caret {
-    // height:45px;
     width:90px;
     border-radius: 0 0 90px 90px;
     -moz-border-radius: 0 0 90px 90px;
     -webkit-border-radius: 0 0 90px 90px;
-    // border-left: 50px solid transparent;
-    // border-right: 50px solid transparent;
-    border-top: 45px solid rgba(0, 0, 0, .9);
-    // background: black;
+    border-top: 45px solid rgba(0, 0, 0, 1);
     margin-left: auto;
     margin-right: auto;
 }
