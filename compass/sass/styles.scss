@@ -88,6 +88,21 @@ a {
     }
     .navbar-brand {
         font-weight: 700;
+        .d{
+            color:  #77615C;
+        }
+
+        .lu{
+            color:  #B2B1CF;
+        }
+
+        .a{
+            color:  #98D3EA;
+        }
+
+        .lo{
+            color:  #E2EBFF;
+        }
         &:focus {
             outline: none;
         }
@@ -496,6 +511,10 @@ a {
     p{
         text-align: left;
     }
+    img{
+        filter: drop-shadow(0px -10px 25px #111);
+        -webkit-filter:drop-shadow(0px -10px 25px #111);
+    }
     .links i{
         display: inline-block;
         width: 35px;
@@ -514,6 +533,7 @@ a {
     .last{
         margin-right: 0!important; 
     }
+
 }
 
 
