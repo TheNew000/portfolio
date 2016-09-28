@@ -30,6 +30,8 @@ $(document).ready(function(){
     // generateStars(".foot-space");
     generateStars(".head-space");
 
+    $('[data-toggle="tooltip"]').tooltip()
+
 });
 
 function collapseNavbar() {
