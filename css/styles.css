@@ -541,11 +541,39 @@ a:hover, a:focus {
   /* Standard syntax */
 }
 /* line 490, ../compass/sass/styles.scss */
+#about .a-head {
+  margin-bottom: 10px;
+}
+/* line 493, ../compass/sass/styles.scss */
 #about .btn {
   text-shadow: 2px 2px 2px #E2EBFF;
 }
-
 /* line 496, ../compass/sass/styles.scss */
+#about p {
+  text-align: left;
+}
+/* line 499, ../compass/sass/styles.scss */
+#about .links i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  vertical-align: bottom;
+  font-size: 20px;
+  color: #42DCA3;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+}
+/* line 514, ../compass/sass/styles.scss */
+#about .last {
+  margin-right: 0 !important;
+}
+
+/* line 520, ../compass/sass/styles.scss */
 #skills {
   color: white;
   text-shadow: 2px 2px 2px black;
@@ -560,7 +588,7 @@ a:hover, a:focus {
   /* Standard syntax */
 }
 
-/* line 506, ../compass/sass/styles.scss */
+/* line 530, ../compass/sass/styles.scss */
 .well {
   background: #49392D;
   margin-left: 50px;
@@ -570,12 +598,12 @@ a:hover, a:focus {
 }
 
 @media (min-width: 767px) {
-  /* line 514, ../compass/sass/styles.scss */
+  /* line 538, ../compass/sass/styles.scss */
   .content-section {
     padding-top: 50px;
   }
 }
-/* line 519, ../compass/sass/styles.scss */
+/* line 543, ../compass/sass/styles.scss */
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -586,12 +614,12 @@ a:hover, a:focus {
   border-radius: 5px;
 }
 
-/* line 529, ../compass/sass/styles.scss */
+/* line 553, ../compass/sass/styles.scss */
 .btn-default {
   border: 1px solid #fe3955;
   background-color: #fe3955;
 }
-/* line 533, ../compass/sass/styles.scss */
+/* line 557, ../compass/sass/styles.scss */
 .btn-default:hover, .btn-default:focus {
   border: 1px solid #fe3955;
   outline: none;
@@ -599,12 +627,12 @@ a:hover, a:focus {
   background-color: rgba(254, 57, 85, 0.4);
 }
 
-/* line 542, ../compass/sass/styles.scss */
+/* line 566, ../compass/sass/styles.scss */
 .btn-primary {
   border: 1px solid #f16301;
   background-color: #f16301;
 }
-/* line 546, ../compass/sass/styles.scss */
+/* line 570, ../compass/sass/styles.scss */
 .btn-primary:hover, .btn-primary:focus {
   border: 1px solid #f16301;
   outline: none;
@@ -612,12 +640,12 @@ a:hover, a:focus {
   background-color: rgba(241, 99, 1, 0.4);
 }
 
-/* line 555, ../compass/sass/styles.scss */
+/* line 579, ../compass/sass/styles.scss */
 .btn-danger {
   border: 1px solid #01d4f1;
   background-color: #01d4f1;
 }
-/* line 559, ../compass/sass/styles.scss */
+/* line 583, ../compass/sass/styles.scss */
 .btn-danger:hover, .btn-danger:focus {
   border: 1px solid #01d4f1;
   outline: none;
@@ -625,65 +653,65 @@ a:hover, a:focus {
   background-color: rgba(1, 212, 241, 0.4);
 }
 
-/* line 568, ../compass/sass/styles.scss */
+/* line 592, ../compass/sass/styles.scss */
 .close {
   color: #00E676;
   opacity: 1;
   text-shadow: none;
 }
-/* line 572, ../compass/sass/styles.scss */
+/* line 596, ../compass/sass/styles.scss */
 .close:hover, .close:focus {
   color: #00E676;
 }
 
-/* line 581, ../compass/sass/styles.scss */
+/* line 605, ../compass/sass/styles.scss */
 ul.banner-social-buttons {
   margin-top: 0;
 }
 @media (max-width: 1199px) {
-  /* line 581, ../compass/sass/styles.scss */
+  /* line 605, ../compass/sass/styles.scss */
   ul.banner-social-buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 587, ../compass/sass/styles.scss */
+  /* line 611, ../compass/sass/styles.scss */
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
-  /* line 591, ../compass/sass/styles.scss */
+  /* line 615, ../compass/sass/styles.scss */
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
 }
 
-/* line 598, ../compass/sass/styles.scss */
+/* line 622, ../compass/sass/styles.scss */
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(178, 177, 207, 0.2);
 }
 
-/* line 604, ../compass/sass/styles.scss */
+/* line 628, ../compass/sass/styles.scss */
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(178, 177, 207, 0.2);
 }
 
-/* line 610, ../compass/sass/styles.scss */
+/* line 634, ../compass/sass/styles.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 614, ../compass/sass/styles.scss */
+/* line 638, ../compass/sass/styles.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 623, ../compass/sass/styles.scss */
+/* line 647, ../compass/sass/styles.scss */
 .logo {
   max-height: 200px;
   -webkit-filter: drop-shadow(14px 0px 4px #111);
@@ -858,19 +886,19 @@ img::-moz-selection {
     opacity: 1;
   }
 }
-/* line 716, ../compass/sass/styles.scss */
+/* line 740, ../compass/sass/styles.scss */
 .head-space, .foot-space {
   z-index: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-/* line 723, ../compass/sass/styles.scss */
+/* line 747, ../compass/sass/styles.scss */
 .head-space .star, .foot-space .star {
   position: absolute;
   background-color: #B2B1CF;
 }
-/* line 728, ../compass/sass/styles.scss */
+/* line 752, ../compass/sass/styles.scss */
 .head-space .star-type1, .foot-space .star-type1 {
   width: 1px;
   height: 1px;
@@ -882,7 +910,7 @@ img::-moz-selection {
   -o-animation: twinkle_one 3s ease-in-out infinite;
   animation: twinkle_one 3s ease-in-out infinite;
 }
-/* line 739, ../compass/sass/styles.scss */
+/* line 763, ../compass/sass/styles.scss */
 .head-space .star-type2, .foot-space .star-type2 {
   width: 2px;
   height: 2px;
@@ -894,7 +922,7 @@ img::-moz-selection {
   -o-animation: twinkle_two 12s ease-in-out infinite;
   animation: twinkle_two 12s ease-in-out infinite;
 }
-/* line 750, ../compass/sass/styles.scss */
+/* line 774, ../compass/sass/styles.scss */
 .head-space .star-type3, .foot-space .star-type3 {
   width: 2px;
   height: 2px;
@@ -907,7 +935,7 @@ img::-moz-selection {
   animation: twinkle_three 7s ease-in-out infinite;
 }
 
-/* line 764, ../compass/sass/styles.scss */
+/* line 788, ../compass/sass/styles.scss */
 footer {
   height: 250px;
   width: 100%;
@@ -920,18 +948,18 @@ footer {
   background: url(../css/img/sleepwell.jpg) 0px -370px;
   background-size: cover;
 }
-/* line 773, ../compass/sass/styles.scss */
+/* line 797, ../compass/sass/styles.scss */
 footer p {
   margin: 0;
 }
-/* line 776, ../compass/sass/styles.scss */
+/* line 800, ../compass/sass/styles.scss */
 footer .caret {
   border-top: 45px solid black;
   display: inherit;
   margin-bottom: 12px;
 }
 
-/* line 785, ../compass/sass/styles.scss */
+/* line 809, ../compass/sass/styles.scss */
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
@@ -940,7 +968,7 @@ footer .caret {
 }
 
 /* Footer left */
-/* line 795, ../compass/sass/styles.scss */
+/* line 819, ../compass/sass/styles.scss */
 .footer-distributed h3 {
   color: #77615C;
   font: normal 48px 'Cookie', cursive;
@@ -948,28 +976,28 @@ footer .caret {
   font-weight: bold;
 }
 
-/* line 802, ../compass/sass/styles.scss */
+/* line 826, ../compass/sass/styles.scss */
 .footer-distributed h3 span {
   color: #B2B1CF;
 }
 
-/* line 806, ../compass/sass/styles.scss */
+/* line 830, ../compass/sass/styles.scss */
 .footer-distributed h3 .l {
   color: #E2EBFF;
 }
 
-/* line 810, ../compass/sass/styles.scss */
+/* line 834, ../compass/sass/styles.scss */
 .footer-distributed h3 .a {
   color: #98D3EA;
 }
 
-/* line 814, ../compass/sass/styles.scss */
+/* line 838, ../compass/sass/styles.scss */
 .footer-distributed h5 span {
   color: #98D3EA;
 }
 
 /* Footer links */
-/* line 820, ../compass/sass/styles.scss */
+/* line 844, ../compass/sass/styles.scss */
 .footer-distributed .footer-links a {
   display: inline-block;
   line-height: 1.8;
@@ -977,7 +1005,7 @@ footer .caret {
   color: inherit;
 }
 
-/* line 827, ../compass/sass/styles.scss */
+/* line 851, ../compass/sass/styles.scss */
 .footer-distributed .footer-company-name {
   color: #8f9296;
   font-size: 14px;
@@ -986,24 +1014,24 @@ footer .caret {
 }
 
 /* Footer Center */
-/* line 836, ../compass/sass/styles.scss */
+/* line 860, ../compass/sass/styles.scss */
 .footer-distributed .footer-center {
   vertical-align: bottom;
   text-align: center;
 }
 
-/* line 842, ../compass/sass/styles.scss */
+/* line 866, ../compass/sass/styles.scss */
 .footer-distributed .fa-copyright:before {
   position: relative;
   left: -6px;
   top: -1px;
 }
-/* line 847, ../compass/sass/styles.scss */
+/* line 871, ../compass/sass/styles.scss */
 .footer-distributed i.fa-copyright {
   top: 11px;
   left: 23px;
 }
-/* line 851, ../compass/sass/styles.scss */
+/* line 875, ../compass/sass/styles.scss */
 .footer-distributed i.fa-copyright, .footer-distributed i.fa-map-marker {
   background-color: #33383b;
   color: #42DCA3;
@@ -1017,7 +1045,7 @@ footer .caret {
   text-align: center;
 }
 
-/* line 865, ../compass/sass/styles.scss */
+/* line 889, ../compass/sass/styles.scss */
 .footer-distributed .footer-center p {
   display: inline-block;
   color: #42DCA3;
@@ -1025,7 +1053,7 @@ footer .caret {
   margin: 0;
 }
 
-/* line 872, ../compass/sass/styles.scss */
+/* line 896, ../compass/sass/styles.scss */
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
@@ -1034,20 +1062,20 @@ footer .caret {
 }
 
 /* Footer Right */
-/* line 881, ../compass/sass/styles.scss */
+/* line 905, ../compass/sass/styles.scss */
 .footer-distributed .footer-right {
   text-align: right;
   margin-top: -40px;
 }
 
-/* line 886, ../compass/sass/styles.scss */
+/* line 910, ../compass/sass/styles.scss */
 .footer-right .logo {
   max-height: 145px;
   -webkit-filter: drop-shadow(14px 0px 4px #111);
   filter: drop-shadow(14px 0px 4px #111);
 }
 
-/* line 892, ../compass/sass/styles.scss */
+/* line 916, ../compass/sass/styles.scss */
 .footer-distributed .footer-company-about {
   line-height: 20px;
   color: #92999f;
@@ -1056,7 +1084,7 @@ footer .caret {
   margin: 0;
 }
 
-/* line 900, ../compass/sass/styles.scss */
+/* line 924, ../compass/sass/styles.scss */
 .footer-distributed .footer-company-about span {
   display: block;
   color: #ffffff;
@@ -1065,17 +1093,17 @@ footer .caret {
   margin-bottom: 20px;
 }
 
-/* line 908, ../compass/sass/styles.scss */
+/* line 932, ../compass/sass/styles.scss */
 .footer-distributed .footer-icons {
   margin-top: 71px;
 }
 
-/* line 912, ../compass/sass/styles.scss */
+/* line 936, ../compass/sass/styles.scss */
 .footer-distributed .footer-info {
   margin-right: 60px;
 }
 
-/* line 916, ../compass/sass/styles.scss */
+/* line 940, ../compass/sass/styles.scss */
 .footer-distributed .footer-icons a {
   display: inline-block;
   width: 35px;
@@ -1094,13 +1122,13 @@ footer .caret {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 880px) {
-  /* line 937, ../compass/sass/styles.scss */
+  /* line 961, ../compass/sass/styles.scss */
   .footer-distributed {
     font: bold 14px sans-serif;
     background-color: black;
   }
 
-  /* line 942, ../compass/sass/styles.scss */
+  /* line 966, ../compass/sass/styles.scss */
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -1110,12 +1138,68 @@ footer .caret {
     text-align: center;
   }
 
-  /* line 951, ../compass/sass/styles.scss */
+  /* line 975, ../compass/sass/styles.scss */
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
 }
-/* line 957, ../compass/sass/styles.scss */
+/* line 981, ../compass/sass/styles.scss */
 .well {
   padding: 11px;
+}
+
+/* entire container, keeps perspective */
+/* line 986, ../compass/sass/styles.scss */
+.flip-container {
+  perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+/* line 990, ../compass/sass/styles.scss */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/* line 994, ../compass/sass/styles.scss */
+.flip-container, .front, .back {
+  width: 300px;
+  height: 260px;
+}
+
+/* flip speed goes here */
+/* line 1000, ../compass/sass/styles.scss */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+/* line 1008, ../compass/sass/styles.scss */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+/* line 1017, ../compass/sass/styles.scss */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+/* line 1024, ../compass/sass/styles.scss */
+.back {
+  transform: rotateY(180deg);
+}
+
+/* line 1028, ../compass/sass/styles.scss */
+.back-img {
+  max-width: 300px;
+  max-height: 260px;
+  border-radius: 1000px;
 }

@@ -487,8 +487,32 @@ a {
     background: -o-linear-gradient(transparent, #98D3EA); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(transparent, #98D3EA); /* For Firefox 3.6 to 15 */
     background: linear-gradient(transparent, #98D3EA 80%, #98D3EA); /* Standard syntax */
+    .a-head{
+        margin-bottom: 10px;
+    }
     .btn{
         text-shadow: 2px 2px 2px #E2EBFF;
+    }
+    p{
+        text-align: left;
+    }
+    .links i{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+        vertical-align: bottom;
+        font-size: 20px;
+        color: #42DCA3;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 20px;
+        margin-bottom: 35px;
+    }
+    .last{
+        margin-right: 0!important; 
     }
 }
 
@@ -957,3 +981,53 @@ footer {
 .well{
     padding: 11px;
 }
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 300px;
+    height: 260px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.back-img{
+    max-width: 300px; 
+    max-height: 260px;
+    border-radius: 1000px
+}
+
