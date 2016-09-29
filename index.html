@@ -94,7 +94,7 @@
                             <h1>Full Stack Software Engineer</h1>
                         </div>
                     </div>
-                    <a href="#about" class="btn purple-btn-circle page-scroll">
+                    <a href="#about" data-toggle="tooltip" data-placement="top" title="Hover & Click on Me!" class="btn purple-btn-circle page-scroll hiddenInfo">
                         <div class="animated">
                             <i class="fa fa-space-shuttle turn"></i>
                         </div>
@@ -118,7 +118,7 @@
                         <a href="https://github.com/TheNew000" data-toggle="tooltip" data-placement="left" title="My Github Page"><i class="fa fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/danny-arango" data-toggle="tooltip" data-placement="left" title="My LinkedIn Page"><i class="last fa fa-linkedin"></i></a>
                     </div>
-                    <div class="flip-container pull-left" ontouchstart="this.classList.toggle('hover');">
+                    <div data-toggle="tooltip" data-placement="top" title="Hover Over Me!"  class="flip-container pull-left hiddenInfo" ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
                                 <img src="css/img/danny2.png" alt="">
@@ -293,7 +293,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                            <h4 class="modal-title"><a href="/busboy" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
                                         </div>
                                         <div class="modal-body">
                                             <p>This is a small portion of a much larger program.  There are forms and beautiful graphs to view informative data as well as calanders for planning!</p>
@@ -309,7 +309,85 @@
                         </div> <!-- End Card -->
                         <div class="col-sm-3">
                             <div class="thumbnail well">
+                                <h4>BlackJack Game</h4>
+                                <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bjModal">Learn More</button></p>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade bjModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="/blackjack" class="btn btn-primary">Live Demo</a> <a href="https://github.com/TheNew000/blackjack" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>While not a particularly exciting program, I chose to include this project because of the algorithm I wrote to determine the locations of the cards on the sprite sheet that they're on.  A more in depth explanation is provided at the <a href="https://github.com/TheNew000/blackjack">Github Repo</a></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>Javascript--jQuery--Bootstrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                    </div> <!-- End Row -->
+                    <div class="row thumb-sect">
+                    <!-- New Card -->
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
+                                <h4>Movie-App</h4>
+                                <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".mdModal">Learn More</button></p>
+                                <h6>Utilizes the Movie_DB API</h6>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade mdModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="/movie-app3" class="btn btn-primary">Live Demo</a> <a href="https://github.com/TheNew000/movie-app3" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>On this app I focused on making multiple calls to the movieDB API.  While the aesthetics are still a work in progress (currently teaching a friend Angular1 and we are rebuilding this concept) I took advantage of the mass of data available and gave the user as many options as possible to access and display many of the options available.  Give it a spin in the <a href="/movie-app3" class="btn btn-primary">Live Demo</a></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>JavaScript--CSS3--HTML--MovieDB API</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                        <!-- New Card -->
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
                                 <h4>Algorithms</h4>
+                                <p class="lead"><button type="button" class="btn btn-danger" data-toggle="modal" disabled data-target=".dgModal">Coming Soon!</button></p>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade dgModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>Things</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                        <!-- New Card -->
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
+                                <h4>Full Stack Project</h4>
                                 <p class="lead"><button type="button" class="btn btn-primary" data-toggle="modal" disabled data-target=".dgModal">Coming Soon!</button></p>
                             </div>
                             <!-- Modal view -->
@@ -331,7 +409,31 @@
                                 </div>
                             </div> <!-- End Modal view -->
                         </div> <!-- End Card -->
-                    </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail well">
+                                <h4>Algorithms</h4>
+                                <p class="lead"><button type="button" class="btn btn-danger" data-toggle="modal" disabled data-target=".dgModal">Coming Soon!</button></p>
+                            </div>
+                            <!-- Modal view -->
+                            <div class="modal fade dgModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title"><a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">Source @ Github</a></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Languages/Frameworks Used:</h3>
+                                            <p>Things</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Modal view -->
+                        </div> <!-- End Card -->
+                    </div> <!-- End Row -->
                 </div>
             </div>
         </div>

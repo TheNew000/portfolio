@@ -30,7 +30,12 @@ $(document).ready(function(){
     // generateStars(".foot-space");
     generateStars(".head-space");
 
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('.hiddenInfo').tooltip('show').on('mouseenter', function(){
+        $('.hiddenInfo').tooltip('destroy');
+    });  
+
 
 });
 
@@ -136,7 +141,7 @@ function validateForm(){
         return false;
     }
 }
-    
+
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
