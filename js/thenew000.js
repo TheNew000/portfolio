@@ -17,6 +17,7 @@ $(document).ready(function(){
     populateSky(".head-space");
     // ToolTip Functionality
     $('[data-toggle="tooltip"]').tooltip();
+    
     $('.hiddenRocket').tooltip('show').on('mouseenter', function(){
         $('.hiddenRocket').tooltip('destroy');
     });  
