@@ -3,7 +3,7 @@ $(document).ready(function(){
     var populateSky = function(space){  
         var $space = $(space);
         var counter = 0;
-        while (counter < 150){
+        while (counter < 175){
             var star = Math.floor((Math.random() * 3) + 1);
             var xPos = $space.width() * Math.random();
             var yPos = ($space.height()/ 2.15) * Math.random();
@@ -19,6 +19,9 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
     $('.hiddenRocket').tooltip('show').on('mouseenter', function(){
         $('.hiddenRocket').tooltip('destroy');
+    });  
+    $('.hiddenInfo').tooltip('show').on('mouseenter', function(){
+        $('.hiddenInfo').tooltip('destroy');
     });  
 
 });
