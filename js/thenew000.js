@@ -1,41 +1,25 @@
 $(document).ready(function(){
-
-    var generateStars = function(galaxy){
-        
-        var $galaxy = $(galaxy);
-        var iterator = 0;
-        // var starSpace = (galaxy == '.head-space') ? 2.25 : 1.2;
-        // var footSpace = $('.foot-space').offset().top;
-        // var yPos = (galaxy == '.foot-space') ? (Math.random() + footSpace) : Math.random();
-        
-        while (iterator <= 100){
-            var x = Math.random();
-            var y = Math.random();
-            var star_type = Math.floor((Math.random() * 3) + 1);
-            var position = {
-                "x" : $galaxy.width() * x,
-                "y" : ($galaxy.height() / 2.25) * y,
-            };
-            
-            $('<div class="star star-type' + star_type + '"></div>').appendTo($galaxy).css({
-                "top" : position.y,
-                "left" : position.x
-            });
-            
-            iterator++;
-        }
-        
+    // Twinkling Star Generator:
+    var populateSky = function(space){  
+        var $space = $(space);
+        var counter = 0;
+        while (counter < 150){
+            var star = Math.floor((Math.random() * 3) + 1);
+            var xPos = $space.width() * Math.random();
+            var yPos = ($space.height()/ 2.15) * Math.random();
+            $('<div class="star star-type' + star + '"></div>').appendTo($space).css({
+                "top" : yPos,
+                "left" : xPos
+            });            
+            counter++;
+        }        
     };
-
-    // generateStars(".foot-space");
-    generateStars(".head-space");
-
+    populateSky(".head-space");
+    // ToolTip Functionality
     $('[data-toggle="tooltip"]').tooltip();
-
-    $('.hiddenInfo').tooltip('show').on('mouseenter', function(){
-        $('.hiddenInfo').tooltip('destroy');
+    $('.hiddenRocket').tooltip('show').on('mouseenter', function(){
+        $('.hiddenRocket').tooltip('destroy');
     });  
-
 
 });
 

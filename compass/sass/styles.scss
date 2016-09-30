@@ -165,7 +165,6 @@ a {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
     text-align: center;
     color: #B2B1CF;
     background: url(../css/img/wotan.jpg) no-repeat top center scroll; 
@@ -177,9 +176,9 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9) 85%, black);
-        background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9) 85%, black);
-        background: linear-gradient(transparent, rgba(0, 0, 0, 0.9) 85%, black);
+        background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9) 85%, black 100%);
+        background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9) 85%, black 100%);
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.9) 85%, black 100%);
         
         // text-shadow: 2px 2px 2px black;
         .brand-heading {
@@ -659,148 +658,126 @@ img::-moz-selection {
     background: transparent;
 }
 
-
-// body {
-//     -webkit-tap-highlight-color: rgba(white, 0.2);
-// }
-
 .logo{
     max-height: 200px;
     -webkit-filter: drop-shadow(14px 0px 4px #111);
     filter: drop-shadow(14px 0px 4px #111);
 }
 
-// -----------------------------------------------------------------------------
-// Twinkle Animations
-// -----------------------------------------------------------------------------
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Twinkle Animations > Twinkle 1
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-@-webkit-keyframes twinkle_one {
-  0%   { opacity: 1; }
-  30%  { opacity: 1; }
-  70%  { opacity: 0; }
+@-webkit-keyframes star1 {
+  0% { opacity: 1; }
+  30% { opacity: 0.5; }
+  70% { opacity: 0; }
   100% { opacity: 1; }
 }
-@-moz-keyframes twinkle_one {
-  0%   { opacity: 1; }
-  30%  { opacity: 1; }
-  70%  { opacity: 0; }
+@-moz-keyframes star1 {
+  0% { opacity: 1; }
+  30% { opacity: 0.5; }
+  70% { opacity: 0; }
   100% { opacity: 1; }
 }
-@-o-keyframes twinkle_one {
-  0%   { opacity: 1; }
-  30%  { opacity: 1; }
-  70%  { opacity: 0; }
+@-o-keyframes star1 {
+  0% { opacity: 1; }
+  30% { opacity: 0.5; }
+  70% { opacity: 0; }
   100% { opacity: 1; }
 }
-@keyframes twinkle_one {
-  0%   { opacity: 1; }
-  30%  { opacity: 1; }
-  70%  { opacity: 0; }
+@keyframes star1 {
+  0% { opacity: 1; }
+  30% { opacity: 0.5; }
+  70% { opacity: 0; }
   100% { opacity: 1; }
 }
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Twinkle Animations > Twinkle 2
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-@-webkit-keyframes twinkle_two {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  80%  { opacity: 0; }
+@-webkit-keyframes star2 {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  80% { opacity: 0.3; }
   100% { opacity: 1; }
 }
-@-moz-keyframes twinkle_two {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  80%  { opacity: 0; }
+@-moz-keyframes star2 {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  80% { opacity: 0.3; }
   100% { opacity: 1; }
 }
-@-o-keyframes twinkle_two {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  80%  { opacity: 0; }
+@-o-keyframes star2 {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  80% { opacity: 0.3; }
   100% { opacity: 1; }
 }
-@keyframes twinkle_two {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  80%  { opacity: 0; }
+@keyframes star2 {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  80% { opacity: 0.3; }
   100% { opacity: 1; }
 }
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Twinkle Animations > Twinkle 3
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-@-webkit-keyframes twinkle_three {
-  0%   { opacity: 1; }
-  30%  { opacity: 0; }
-  40%  { opacity: 0; }
+@-webkit-keyframes star3 {
+  0% { opacity: 1; }
+  30% { opacity: 0; }
+  40% { opacity: 0.5; }
   100% { opacity: 1; }
 }
-@-moz-keyframes twinkle_three {
-  0%   { opacity: 1; }
-  30%  { opacity: 0; }
-  40%  { opacity: 0; }
+@-moz-keyframes star3 {
+  0% { opacity: 1; }
+  30% { opacity: 0; }
+  40% { opacity: 0.5; }
   100% { opacity: 1; }
 }
-@-o-keyframes twinkle_three {
-  0%   { opacity: 1; }
-  30%  { opacity: 0; }
-  40%  { opacity: 0; }
+@-o-keyframes star3 {
+  0% { opacity: 1; }
+  30% { opacity: 0; }
+  40% { opacity: 0.5; }
   100% { opacity: 1; }
 }
-@keyframes twinkle_three {
-  0%   { opacity: 1; }
-  30%  { opacity: 0; }
-  40%  { opacity: 0; }
+@keyframes star3 {
+  0% { opacity: 1; }
+  30% { opacity: 0; }
+  40% { opacity: 0.5; }
   100% { opacity: 1; }
 }
 
-.head-space, .foot-space{
+.head-space{
     z-index: 0;
-    // position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-
       .star{
         position: absolute;
         background-color: #B2B1CF;
       }
-
       .star-type1{
         width: 1px;
         height: 1px;
         border-radius: 2px;
         -webkit-box-shadow: 0 0 1px 1px #B2B1CF;
                 box-shadow: 0 0 1px 1px #B2B1CF;
-        -webkit-animation: twinkle_one 3s ease-in-out infinite;
-           -moz-animation: twinkle_one 3s ease-in-out infinite;
-             -o-animation: twinkle_one 3s ease-in-out infinite;
-                animation: twinkle_one 3s ease-in-out infinite;
+        -webkit-animation: star1 3s ease-in-out infinite;
+           -moz-animation: star1 3s ease-in-out infinite;
+             -o-animation: star1 3s ease-in-out infinite;
+                animation: star1 3s ease-in-out infinite;
       }
       .star-type2{
         width: 2px;
         height: 2px;
         border-radius: 2px;
-        -webkit-box-shadow: 0 0 2px 1px #B2B1CF;
-                box-shadow: 0 0 2px 1px #B2B1CF;
-        -webkit-animation: twinkle_two 12s ease-in-out infinite;
-           -moz-animation: twinkle_two 12s ease-in-out infinite;
-             -o-animation: twinkle_two 12s ease-in-out infinite;
-                animation: twinkle_two 12s ease-in-out infinite;
+        -webkit-box-shadow: 0 0 2px 0 #B2B1CF;
+                box-shadow: 0 0 2px 0 #B2B1CF;
+        -webkit-animation: star2 5s ease-in-out infinite;
+           -moz-animation: star2 5s ease-in-out infinite;
+             -o-animation: star2 5s ease-in-out infinite;
+                animation: star2 5s ease-in-out infinite;
       }
       .star-type3{
         width: 2px;
         height: 2px;
         border-radius: 2px;
-        -webkit-box-shadow: 0 0 2px 0 #B2B1CF;
-                box-shadow: 0 0 2px 0 #B2B1CF;
-        -webkit-animation: twinkle_three 7s ease-in-out infinite;
-           -moz-animation: twinkle_three 7s ease-in-out infinite;
-             -o-animation: twinkle_three 7s ease-in-out infinite;
-                animation: twinkle_three 7s ease-in-out infinite;
+        -webkit-box-shadow: 0 0 3px 1.25px #B2B1CF;
+                box-shadow: 0 0 3px 1.25px #B2B1CF;
+        -webkit-animation: star3 8s ease-in-out infinite;
+           -moz-animation: star3 8s ease-in-out infinite;
+             -o-animation: star3 8s ease-in-out infinite;
+                animation: star3 8s ease-in-out infinite;
       }
       
 }
@@ -974,8 +951,6 @@ footer {
     margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
 
     .footer-distributed{
@@ -1006,7 +981,7 @@ footer {
 .flip-container {
     perspective: 1000px;
 }
-    /* flip the pane when hovered */
+    /* flip the picture when hovered */
     .flip-container:hover .flipper, .flip-container.hover .flipper {
         transform: rotateY(180deg);
     }
